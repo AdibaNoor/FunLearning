@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:funlearing/util/Card_custom.dart';
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -39,9 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
             child: PageView(
 
               children: [
-                Card(),
-                Card(),
-                Card(),
+                Card_custom(),
+                Card_custom(),
+                Card_custom(),
               ],
             ),
           )

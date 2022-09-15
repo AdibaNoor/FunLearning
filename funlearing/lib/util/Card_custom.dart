@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-class Card extends StatefulWidget {
-  const Card({Key? key}) : super(key: key);
+class Card_custom extends StatefulWidget {
+  const Card_custom({Key? key}) : super(key: key);
 
   @override
-  State<Card> createState() => _CardState();
+  State<Card_custom> createState() => _Card_customState();
 }
 
-class _CardState extends State<Card> {
+class _Card_customState extends State<Card_custom> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,6 +21,7 @@ class _CardState extends State<Card> {
           ],
         ),
       ),
-    );
+    );;
   }
 }
+
