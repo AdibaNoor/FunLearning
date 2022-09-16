@@ -21,43 +21,30 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
+                Row(children: [
                     Text('Home',
                       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
                     Text('Page',
-                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),
-                  ],
+                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
                 ),
-                Icon(Icons.notifications_none),
-              ],
-            ),
-          ),
+                Icon(Icons.notifications_none),],
+            ),),
           SizedBox(height: 25,),
           //horizontal scroll
-          Container(
-            height: 200,
+          Container(height: 200,
             child: PageView(
-
               children: [
                 Card_custom(),
                 Card_custom(),
                 Card_custom(),
-              ],
-            ),
-          )
-
+              ],),
+          ),
+           SizedBox(height: 25,),
           //icons card
 
 
           //main category card
-        ]
-
-
-
-
-        ),
-      )
+        ]),)
     );
   }
 }

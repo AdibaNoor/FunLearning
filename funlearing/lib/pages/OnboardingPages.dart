@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:funlearing/main.dart';
+import 'package:funlearing/pages/main.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'HomePage.dart';
 
