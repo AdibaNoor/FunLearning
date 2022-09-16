@@ -45,7 +45,7 @@ class OnBoardingPage extends StatelessWidget {
       next: Icon(Icons.arrow_forward),
       dotsDecorator: getDotDecoration(),
       onChange: (index) => print('Page $index selected'),
-      globalBackgroundColor: Colors.amber,
+      //globalBackgroundColor: Colors.transparent,
       // skip: 0,
       //nextFlex: 0,
       // isProgressTap: false,
@@ -77,6 +77,6 @@ class OnBoardingPage extends StatelessWidget {
     titleTextStyle: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.black),
     bodyTextStyle: TextStyle(fontSize: 20),
     imagePadding: EdgeInsets.all(24),
-    pageColor: Colors.white,
+    pageColor: Colors.pink,
   );
 }
