@@ -37,7 +37,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Minor project/AltrOps" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -48,7 +48,7 @@
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/funlearing/lib/pages/main.dart" />
+      <option name="filePath" value="$PROJECT_DIR$/funlearing/lib/main.dart" />
       <method v="2" />
     </configuration>
   </component>
