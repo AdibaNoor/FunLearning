@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc24fb1a-fe8d-4526-929b-2fd7f623c271" name="Changes" comment="">
+    <list default="true" id="bc24fb1a-fe8d-4526-929b-2fd7f623c271" name="Changes" comment="done some directory related changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funlearing/lib/pages/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/funlearing/lib/pages/HomePage.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2EnJhuiBusGRrX3sNUMUikgFNse" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,12 +39,13 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Minor project/AltrOps" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Go-Kart" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\sample project\FunLearning\funlearing\lib" />
       <recent name="E:\projects\sample project\FunLearning\funlearing\lib\pages" />
     </key>
   </component>
@@ -61,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663225544987</updated>
     </task>
+    <task id="LOCAL-00001" summary="done some directory related changes">
+      <created>1663446437241</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663446437241</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -73,6 +84,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done some directory related changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="done some directory related changes" />
   </component>
 </project>
