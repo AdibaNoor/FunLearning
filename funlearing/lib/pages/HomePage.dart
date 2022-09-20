@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:funlearing/pages/FavPage.dart';
+import 'package:funlearing/pages/PostPage.dart';
+import 'package:funlearing/pages/ProfilePage.dart';
 import 'package:funlearing/util/Card_custom.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 class MyHomePage extends StatefulWidget {
@@ -12,32 +15,32 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex=0;
 
-  final List<Widget> _pages = [
-    Row(children: [
-      Text('Home',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
-      Text('Page',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
-    ),
-    Row(children: [
-      Text('Fav',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
-      Text('Page',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
-    ),
-    Row(children: [
-      Text('Post',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
-      Text('Page',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
-    ),
-    Row(children: [
-      Text('Profile',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
-      Text('Page',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
-    ),
-  ];
+  // final List<Widget> _pages = [
+  //   Row(children: [
+  //     Text('Home',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+  //     Text('Page',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
+  //   ),
+  //   Row(children: [
+  //     Text('Fav',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+  //     Text('Page',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
+  //   ),
+  //   Row(children: [
+  //     Text('Post',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+  //     Text('Page',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
+  //   ),
+  //   Row(children: [
+  //     Text('Profile',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+  //     Text('Page',
+  //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
+  //   ),
+  // ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,13 +52,13 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.symmetric(horizontal: 25.0,vertical: 20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [ _pages.elementAt(_selectedIndex),
-                // Row(children: [
-                //     Text('Home',
-                //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
-                //     Text('Page',
-                //       style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
-                // ),
+              children: [
+                Row(children: [
+                    Text('Home',
+                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+                    Text('Page',
+                      style: TextStyle(fontSize: 28, fontWeight: FontWeight.normal),),],
+                ),
                 Icon(Icons.notifications_none),],
             ),),
           SizedBox(height: 25,),
@@ -83,15 +86,28 @@ class _MyHomePageState extends State<MyHomePage> {
       },
       color: Colors.black38,
       duration: Duration(milliseconds: 100),
-      tabs: const[
+      tabs: [
         GButton(icon: Icons.home_outlined,
-        text:'Home' ,),
+        text:'Home' ,
+          onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> MyHomePage()));
+          },
+        ),
         GButton(icon: Icons.star_border,
-        text: 'Fav',),
+        text: 'Fav',
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> FavPage()));
+          },),
         GButton(icon: Icons.add_box_outlined,
-        text: 'Post',),
+        text: 'Post',
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> PostPage()));
+          },),
         GButton(icon: Icons.person_outline,
-        text: 'Profile',),
+        text: 'Profile',
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> ProfilePage()));
+          },),
       ],
     ),);
   }
